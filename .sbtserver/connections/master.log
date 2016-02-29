@@ -1,0 +1,29 @@
+New log file opened at Thu Dec 24 17:49:49 CST 2015 by 29829@jinfu.local
+Taking next connection to: 55575
+New client attempting to connect on port: 55576-55575
+  Address = /192.168.1.6:55575
+This client on port 55576 has uuid da509907-68cc-44bb-865b-9ba2d7be3985 configName activator humanReadableName Activator protocolVersion 3 featureTags Vector()
+Connected Clients: activator-da509907-68cc-44bb-865b-9ba2d7be3985
+Taking next connection to: 55575
+New client attempting to connect on port: 55577-55575
+  Address = /192.168.1.6:55575
+Handshake exception on socket: 55577
+sbt.impl.ipc.HandshakeException: Unable to perform handshake
+	at sbt.impl.ipc.Peer.handshake(IPC.scala:46)
+	at sbt.impl.ipc.MultiClientServer.<init>(IPC.scala:150)
+	at sbt.server.SbtServerSocketHandler$$anon$1.run(SbtServerSocketHandler.scala:43)
+Caused by: java.net.SocketException: Connection reset
+	at java.net.SocketInputStream.read(SocketInputStream.java:209)
+	at java.net.SocketInputStream.read(SocketInputStream.java:141)
+	at java.io.BufferedInputStream.fill(BufferedInputStream.java:246)
+	at java.io.BufferedInputStream.read(BufferedInputStream.java:265)
+	at java.io.DataInputStream.readInt(DataInputStream.java:387)
+	at sbt.impl.ipc.Peer.receive(IPC.scala:95)
+	at sbt.impl.ipc.Peer.handshake(IPC.scala:49)
+	... 2 more
+Taking next connection to: 55575
+New client attempting to connect on port: 55578-55575
+  Address = /192.168.1.6:55575
+This client on port 55578 has uuid 0b5fb6f6-c18f-4636-9e5d-779bf30fce09 configName activator humanReadableName Activator protocolVersion 3 featureTags Vector()
+Connected Clients: activator-da509907-68cc-44bb-865b-9ba2d7be3985, activator-0b5fb6f6-c18f-4636-9e5d-779bf30fce09
+Taking next connection to: 55575
